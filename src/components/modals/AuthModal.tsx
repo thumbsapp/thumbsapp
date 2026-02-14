@@ -1,0 +1,1 @@
+// Placeholder – we'll use pages for auth

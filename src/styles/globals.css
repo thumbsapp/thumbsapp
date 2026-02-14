@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+  }
+}
+
+@layer components {
+  .gettr-link-card {
+    @apply border border-border-color rounded-lg overflow-hidden bg-background/50 hover:bg-card-bg transition;
+  }
+  .gettr-headline {
+    @apply font-bold text-lg hover:text-primary cursor-pointer;
+  }
+  .author-handle {
+    @apply text-text-secondary text-sm;
+  }
+  .news-source {
+    @apply text-xs text-primary font-semibold;
+  }
+}
