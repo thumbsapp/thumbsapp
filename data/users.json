@@ -1,0 +1,21 @@
+// data/users.json
+[
+    {
+        "id": "u1",
+        "username": "ThumbMaster",
+        "avatar": "assets/avatars/avatar1.jpg",
+        "verified": true,
+        "country": "us",
+        "reputation": 85,
+        "level": "L5"
+    },
+    {
+        "id": "u2",
+        "username": "GameSlayer",
+        "avatar": "assets/avatars/avatar2.jpg",
+        "verified": false,
+        "country": "gb",
+        "reputation": 72,
+        "level": "L3"
+    }
+]

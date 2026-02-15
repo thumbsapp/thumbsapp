@@ -1,0 +1,10 @@
+[
+    {
+        "id": "c1",
+        "with": "u2",
+        "messages": [
+            { "from": "u2", "text": "Hey wanna play?", "timestamp": "10:30" },
+            { "from": "me", "text": "Sure, let's go", "timestamp": "10:32" }
+        ]
+    }
+]

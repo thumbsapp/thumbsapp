@@ -1,0 +1,28 @@
+/* css/responsive.css */
+@media (max-width: 1200px) {
+    .layout {
+        grid-template-columns: 220px 1fr 280px;
+    }
+}
+@media (max-width: 992px) {
+    .layout {
+        grid-template-columns: 1fr 280px;
+    }
+    .left-sidebar {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .right-rail {
+        display: none;
+    }
+    .header .main-nav {
+        display: none;
+    }
+    .search-bar {
+        max-width: 200px;
+    }
+}

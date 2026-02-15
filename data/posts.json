@@ -1,0 +1,39 @@
+// data/posts.json
+[
+    {
+        "id": "p1",
+        "userId": "u1",
+        "type": "challenge",
+        "game": "Valorant",
+        "difficulty": "Hard",
+        "level": "L4",
+        "content": "1v1 me on Bind!",
+        "likes": 24,
+        "comments": 5,
+        "shares": 2,
+        "donations": 150,
+        "timestamp": "2h ago",
+        "stake": 50,
+        "fee": 5,
+        "payout": 95,
+        "gift": true,
+        "sponsor": true
+    },
+    {
+        "id": "p2",
+        "userId": "u2",
+        "type": "challenge",
+        "game": "League of Legends",
+        "difficulty": "Medium",
+        "level": "L3",
+        "content": "Looking for duo",
+        "likes": 12,
+        "comments": 2,
+        "shares": 1,
+        "donations": 20,
+        "timestamp": "5h ago",
+        "stake": 20,
+        "fee": 2,
+        "payout": 38
+    }
+]

@@ -1,0 +1,46 @@
+/* css/layout.css */
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 320px;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
+    min-height: calc(100vh - 100px);
+}
+
+.left-sidebar {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+    box-shadow: var(--shadow);
+}
+
+.center-feed {
+    background-color: transparent;
+    min-width: 0;
+}
+
+.right-rail {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+    box-shadow: var(--shadow);
+}
+
+footer {
+    background-color: var(--bg-card);
+    padding: 30px 40px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--text-secondary);
+}

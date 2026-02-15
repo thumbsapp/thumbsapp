@@ -1,0 +1,71 @@
+/* css/live.css */
+.live-match-card {
+    background: #252538;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
+.live-match-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,245,212,0.2);
+}
+.match-players {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.player img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-neon);
+}
+.vs {
+    font-weight: bold;
+    color: var(--accent-neon);
+}
+.match-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.join-btn {
+    background: var(--accent-green);
+    color: #0f0f17;
+    padding: 6px 0;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.donation-ticker {
+    background: #1e1e2f;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.trending-games, .suggested-users {
+    margin: 20px 0;
+}
+.trending-games h4, .suggested-users h4 {
+    margin-bottom: 10px;
+    color: var(--accent-neon);
+}
