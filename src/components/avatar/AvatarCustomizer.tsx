@@ -1,1 +1,0 @@
-// Placeholder – we'll assume users can customize via a modal
