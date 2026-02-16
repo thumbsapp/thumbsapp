@@ -1,0 +1,59 @@
+/* Additional CSS for competition row and video controls */
+.competition-row {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0 8px;
+    flex-wrap: wrap;
+}
+.interaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 30px;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.interaction-btn:hover {
+    background: #252538;
+    color: #00f5d4;
+}
+.interaction-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+}
+
+.video-controls-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    padding: 8px 12px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+.video-controls-overlay .control-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+}
+.video-controls-overlay .control-btn:hover {
+    background: #00f5d4;
+    color: #0f0f17;
+}

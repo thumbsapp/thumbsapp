@@ -1,0 +1,75 @@
+<!-- messages.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbsApp · Messages</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/live.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .messages-container {
+            display: flex;
+            height: calc(100vh - 180px);
+            background: #1a1a2e;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .conversations-list {
+            width: 30%;
+            border-right: 1px solid #333;
+            overflow-y: auto;
+        }
+        .chat-window {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .chat-input-area {
+            padding: 15px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="layout">
+            <aside class="left-sidebar" id="leftSidebar"></aside>
+            <main class="center-feed" id="centerFeed"></main>
+            <aside class="right-rail" id="rightRail"></aside>
+        </div>
+        <footer id="footer"></footer>
+    </div>
+    <div id="modalContainer"></div>
+    <script src="js/core/storage.js"></script>
+    <script src="js/core/state.js"></script>
+    <script src="js/core/router.js"></script>
+    <script src="js/core/app.js"></script>
+    <script src="js/modules/ui.js"></script>
+    <script src="js/modules/feed.js"></script>
+    <script src="js/modules/live.js"></script>
+    <script src="js/modules/notifications.js"></script>
+    <script src="js/modules/wallet.js"></script>
+    <script src="js/modules/messenger.js"></script>
+    <script src="js/modules/challenges.js"></script>
+    <script src="js/modules/thumtok.js"></script>
+    <script src="js/modules/avatar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.ThumbsApp.init('messages');
+        });
+    </script>
+</body>
+</html>

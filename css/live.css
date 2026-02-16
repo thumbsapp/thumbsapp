@@ -1,0 +1,71 @@
+/* css/live.css (append video control styles) */
+.live-video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.live-video-container video {
+    width: 100%;
+    display: block;
+}
+.video-controls-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background: rgba(0,0,0,0.6);
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+.live-video-container:hover .video-controls-overlay {
+    opacity: 1;
+}
+.control-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+}
+.control-btn:hover {
+    color: var(--accent-neon);
+}
+
+/* Wiki card styles (Task G) */
+.wiki-card {
+    background: #252538;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.wiki-card h4 {
+    color: var(--accent-neon);
+    margin-bottom: 12px;
+}
+.wiki-card input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    background: #1a1a2e;
+    color: white;
+    margin-bottom: 10px;
+}
+.wiki-results {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.wiki-results div {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+.wiki-results div:hover {
+    background: #2a2a3a;
+}
