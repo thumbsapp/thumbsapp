@@ -1,0 +1,42 @@
+/* css/cards.css */
+/* shared card styles, already covered in feed.css, but additional card types */
+.challenge-card, .news-card, .donation-hub-card {
+    /* inherits from feed-card */
+}
+.escrow-preview {
+    background: #252538;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.escrow-stake, .escrow-fee, .escrow-payout {
+    text-align: center;
+}
+.escrow-stake .amount { color: var(--accent-gold); font-weight: 600; }
+.escrow-fee .amount { color: var(--accent-red); }
+.escrow-payout .amount { color: var(--accent-green); }
+
+.progress-bar {
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+.progress-fill {
+    height: 100%;
+    background: var(--accent-neon);
+    border-radius: 4px;
+    width: 0%;
+}
+.supporter-avatars {
+    display: flex;
+    gap: 4px;
+}
+.supporter-avatars img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-neon);
+}
