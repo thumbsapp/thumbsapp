@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Challenge</title>
+    <link rel="stylesheet" href="css/core/base.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+</head>
+<body>
+    <header>...</header>
+    <div class="main-container">
+        <aside class="sidebar-left">...</aside>
+        <main class="center-feed">
+            <h2>Create Challenge</h2>
+            <form id="challengeCreateForm">
+                <label>Game</label>
+                <select id="gameSelect"></select>
+                <label>Level</label>
+                <select id="levelSelect"></select>
+                <label>Bet Amount ($)</label>
+                <input type="number" id="betAmount" min="0.4" max="400" step="0.1">
+                <label>Gift Incentive (optional)</label>
+                <input type="text" id="giftIncentive" placeholder="e.g., 10 coins">
+                <label>Time Limit (minutes)</label>
+                <input type="number" id="timeLimit" value="30">
+                <label>Public</label>
+                <input type="checkbox" id="isPublic" checked>
+                <label>Allow Sponsors</label>
+                <input type="checkbox" id="allowSponsors">
+                <label>Allow Spectators</label>
+ <input type="checkbox" id="allowSpectators" checked>
+                <button type="submit">Create Challenge</button>
+            </form>
+        </main>
+        <aside class="sidebar-right">...</aside>
+    </div>
+    <footer>...</footer>
+    <script src="js/challenge/challenge-create.js" type="module"></script>
+</body>
+</html>

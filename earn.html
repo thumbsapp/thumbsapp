@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbsApp - Earn</title>
+    <link rel="stylesheet" href="css/core/base.css">
+    <link rel="stylesheet" href="css/core/variables.css">
+    <link rel="stylesheet" href="css/core/typography.css">
+    <link rel="stylesheet" href="css/core/themes.css">
+    <link rel="stylesheet" href="css/core/theme-dark.css">
+    <link rel="stylesheet" href="css/core/theme-light.css">
+    <link rel="stylesheet" href="css/core/animations.css">
+    <link rel="stylesheet" href="css/layout/layout-3col.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/layout/sidebar-left.css">
+    <link rel="stylesheet" href="css/layout/sidebar-right.css">
+    <link rel="stylesheet" href="css/layout/floating-action.css">
+    <link rel="stylesheet" href="css/layout/responsive.css">
+    <link rel="stylesheet" href="css/feeds/feed-global.css">
+    <link rel="stylesheet" href="css/feeds/feed-earn.css">
+    <link rel="stylesheet" href="css/feeds/feed-infinite-scroll.css">
+    <link rel="stylesheet" href="css/feeds/feed-skeleton.css">
+    <link rel="stylesheet" href="css/cards/post-card.css">
+    <link rel="stylesheet" href="css/cards/challenge-card.css">
+    <link rel="stylesheet" href="css/cards/live-card.css">
+    <link rel="stylesheet" href="css/cards/video-card.css">
+    <link rel="stylesheet" href="css/cards/sponsor-card.css">
+    <link rel="stylesheet" href="css/cards/donation-card.css">
+    <link rel="stylesheet" href="css/cards/ad-card.css">
+    <link rel="stylesheet" href="css/cards/marketplace-card.css">
+    <link rel="stylesheet" href="css/live/live-player.css">
+    <link rel="stylesheet" href="css/live/live-overlay.css">
+    <link rel="stylesheet" href="css/live/live-chat.css">
+    <link rel="stylesheet" href="css/live/live-reactions.css">
+    <link rel="stylesheet" href="css/live/live-sponsors.css">
+    <link rel="stylesheet" href="css/live/live-ads.css">
+    <link rel="stylesheet" href="css/live/moderator-panel.css">
+    <link rel="stylesheet" href="css/economy/wallet.css">
+    <link rel="stylesheet" href="css/economy/escrow.css">
+    <link rel="stylesheet" href="css/economy/transactions.css">
+    <link rel="stylesheet" href="css/economy/platform-fee.css">
+    <link rel="stylesheet" href="css/economy/sponsorship.css">
+    <link rel="stylesheet" href="css/components/dropdown.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+    <link rel="stylesheet" href="css/components/badges.css">
+</head>
+<body>
+    <header class="app-header">
+        <!-- same as index.html header -->
+    </header>
+    <div class="main-container">
+        <aside class="sidebar-left">
+            <!-- same left sidebar -->
+        </aside>
+        <main class="center-feed" id="earnFeed">
+            <div class="sticky-filter-bar">
+                <span class="filter active">Open Challenges</span>
+                <span class="filter">Game Store</span>
+                <span class="filter">Sponsored Matches</span>
+                <span class="filter">Donations</span>
+                <span class="filter">Royal Free Games</span>
+            </div>
+            <button id="refresh-feed" class="refresh-btn">↻</button>
+            <div class="feed-stream" id="feedStream">
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+            <div class="infinite-scroll-trigger"></div>
+        </main>
+        <aside class="sidebar-right">
+            <!-- same right sidebar -->
+        </aside>
+    </div>
+    <footer class="app-footer">
+        <!-- same footer -->
+    </footer>
+    <div class="floating-action-btn" id="fab">+</div>
+    <script src="js/core/app.js" type="module"></script>
+    <!-- include all other scripts as index.html -->
+    <script src="js/feeds/earn-feed.js" type="module"></script>
+</body>
+</html>

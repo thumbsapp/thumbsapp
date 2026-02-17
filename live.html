@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbsApp - Live Arena</title>
+    <link rel="stylesheet" href="css/core/base.css">
+    <link rel="stylesheet" href="css/live/live-player.css">
+    <link rel="stylesheet" href="css/live/live-overlay.css">
+    <link rel="stylesheet" href="css/live/live-chat.css">
+    <link rel="stylesheet" href="css/live/live-reactions.css">
+    <link rel="stylesheet" href="css/live/live-sponsors.css">
+    <link rel="stylesheet" href="css/live/live-ads.css">
+    <link rel="stylesheet" href="css/live/moderator-panel.css">
+</head>
+<body>
+    <header class="app-header">...</header>
+    <div class="main-container live-container">
+        <div class="live-video-area">
+            <video id="liveVideo" src=""></video>
+            <div class="overlay-controls bottom-right">
+                <button>🔊</button>
+                <button>⬇️</button>
+                <button>⚙️</button>
+                <button>⛶</button>
+            </div>
+        </div>
+        <div class="live-chat-area">
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Chat...">
+                <button>Send</button>
+            </div>
+            <div class="gifts-donations">
+                <button>🎁 Gift</button>
+                <button>💰 Donate</button>
+                <div class="reactions">❤️ 👍 👎</div>
+            </div>
+        </div>
+    </div>
+    <footer>...</footer>
+    <script src="js/live/live-engine.js" type="module"></script>
+</body>
+</html>

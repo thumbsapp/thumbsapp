@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbsApp - Home</title>
+    <link rel="stylesheet" href="css/core/base.css">
+    <link rel="stylesheet" href="css/core/variables.css">
+    <link rel="stylesheet" href="css/core/typography.css">
+    <link rel="stylesheet" href="css/core/themes.css">
+    <link rel="stylesheet" href="css/core/theme-dark.css">
+    <link rel="stylesheet" href="css/core/theme-light.css">
+    <link rel="stylesheet" href="css/core/animations.css">
+    <link rel="stylesheet" href="css/layout/layout-3col.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/layout/sidebar-left.css">
+    <link rel="stylesheet" href="css/layout/sidebar-right.css">
+    <link rel="stylesheet" href="css/layout/floating-action.css">
+    <link rel="stylesheet" href="css/layout/responsive.css">
+    <link rel="stylesheet" href="css/feeds/feed-global.css">
+    <link rel="stylesheet" href="css/feeds/feed-home.css">
+    <link rel="stylesheet" href="css/feeds/feed-infinite-scroll.css">
+    <link rel="stylesheet" href="css/feeds/feed-skeleton.css">
+    <link rel="stylesheet" href="css/cards/post-card.css">
+    <link rel="stylesheet" href="css/cards/challenge-card.css">
+    <link rel="stylesheet" href="css/cards/live-card.css">
+    <link rel="stylesheet" href="css/cards/video-card.css">
+    <link rel="stylesheet" href="css/cards/sponsor-card.css">
+    <link rel="stylesheet" href="css/cards/donation-card.css">
+    <link rel="stylesheet" href="css/cards/ad-card.css">
+    <link rel="stylesheet" href="css/cards/marketplace-card.css">
+    <link rel="stylesheet" href="css/live/live-player.css">
+    <link rel="stylesheet" href="css/live/live-overlay.css">
+    <link rel="stylesheet" href="css/live/live-chat.css">
+    <link rel="stylesheet" href="css/live/live-reactions.css">
+    <link rel="stylesheet" href="css/live/live-sponsors.css">
+    <link rel="stylesheet" href="css/live/live-ads.css">
+    <link rel="stylesheet" href="css/live/moderator-panel.css">
+    <link rel="stylesheet" href="css/economy/wallet.css">
+    <link rel="stylesheet" href="css/economy/escrow.css">
+    <link rel="stylesheet" href="css/economy/transactions.css">
+    <link rel="stylesheet" href="css/economy/platform-fee.css">
+    <link rel="stylesheet" href="css/economy/sponsorship.css">
+    <link rel="stylesheet" href="css/components/dropdown.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+    <link rel="stylesheet" href="css/components/badges.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo">ThumbsApp</div>
+            <div class="auth-links">
+                <a href="login.html" id="login-link">Login</a>
+                <a href="register.html" id="register-link">Create Account</a>
+                <a href="#" id="logout-link" style="display:none;">Logout</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
+        <nav class="header-center">
+            <a href="index.html" class="active">Home</a>
+            <a href="earn.html">Earn</a>
+            <a href="trending.html">Trending Now</a>
+        </nav>
+        <div class="header-right">
+            <a href="challenge-create.html" class="btn-primary">Create Challenge</a>
+            <a href="wallet.html" class="wallet-icon">💰</a>
+            <a href="notifications.html" class="notifications-icon">🔔</a>
+            <div class="avatar-dropdown">
+                <img src="assets/avatars/default.png" alt="Avatar" class="avatar">
+                <div class="more-dropdown" id="moreDropdown">
+                    <div class="dropdown-section">
+                        <span>Language</span>
+                        <ul>
+                            <li class="active">English</li>
+                            <li>French</li>
+                            <li>Arabic</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-section">
+                        <span>Appearance</span>
+                        <ul>
+                            <li class="active">Dark</li>
+                            <li>Light</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-section">
+                        <span>Theme</span>
+                        <ul>
+                            <li class="active">Default</li>
+                            <li>Red</li>
+                            <li>Pink</li>
+                            <li>Yellow</li>
+                            <li>Orange</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-section">
+                        <a href="#">⭐ My Reputation</a>
+                        <a href="#">📊 My Activity</a>
+                    </div>
+                    <div class="dropdown-section">
+                        <a href="settings.html">⚙ Settings</a>
+                        <a href="#">❓ Help Center</a>
+                        <a href="#" id="logout-dropdown">🚪 Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main 3-column layout -->
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <div class="profile-summary">
+                <img src="assets/avatars/default.png" alt="Avatar" class="avatar-large">
+                <div class="username">Guest</div>
+                <div class="reputation">Reputation: 0</div>
+                <div class="followers">Followers: 0</div>
+                <div class="location">Location: Earth</div>
+                <div class="achievements">Achievements: 🏅0</div>
+            </div>
+            <nav class="left-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="earn.html">Earn</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="donations.html">Donations</a></li>
+                    <li><a href="ads.html">Advertisements</a></li>
+                    <li><a href="#">Free Royal Games</a></li>
+                    <li><a href="wiki.html">WIKI</a></li>
+                </ul>
+            </nav>
+            <div class="wallet-summary">
+                <div class="balance">Thumbs Coins: <span id="wallet-balance">0</span></div>
+                <button id="deposit-btn">Deposit</button>
+                <button id="withdraw-btn">Withdraw</button>
+                <div class="escrow-indicator" style="display:none;">Escrow: locked</div>
+            </div>
+        </aside>
+
+        <!-- Center Feed -->
+        <main class="center-feed" id="homeFeed">
+            <div class="sticky-filter-bar">
+                <span class="filter active">All</span>
+                <span class="filter">Following</span>
+                <span class="filter">Challenges</span>
+                <span class="filter">Videos</span>
+                <span class="filter">Live</span>
+                <span class="filter">Ads</span>
+                <span class="filter">Sponsored</span>
+                <span class="filter">News</span>
+            </div>
+            <button id="refresh-feed" class="refresh-btn">↻</button>
+            <div class="feed-stream" id="feedStream">
+                <!-- Cards injected via JS -->
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+            <div class="infinite-scroll-trigger"></div>
+            <div class="loading-spinner" style="display:none;">Loading...</div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="trending-hashtags">
+                <h3>Trending Hashtags</h3>
+                <ul>
+                    <li>#ThumbsUp</li>
+                    <li>#Competition</li>
+                    <li>#LiveArena</li>
+                </ul>
+            </div>
+            <div class="sponsored-content">
+                <h3>Sponsored</h3>
+                <div class="ad-card">Ad 1</div>
+                <div class="ad-card">Ad 2</div>
+            </div>
+            <div class="top-players">
+                <h3>Top Players</h3>
+                <ul>
+                    <li>Player1</li>
+                    <li>Player2</li>
+                </ul>
+            </div>
+            <div class="recommended-challenges">
+                <h3>Recommended Challenges</h3>
+                <div class="challenge-card">Challenge 1</div>
+            </div>
+            <div class="wiki-ai-box">
+                <h3>WIKI AI</h3>
+                <p>Ask me anything...</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-top">
+            <a href="#">Home</a>
+            <a href="#">Live Arena</a>
+            <a href="#">Games</a>
+            <a href="#">Leaderboard</a>
+            <a href="#">ThumTok</a>
+            <a href="#">Ads</a>
+            <a href="#">Marketplace</a>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-col">
+                <h4>Community</h4>
+                <a href="#">Guidelines</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="footer-col">
+                <h4>Trust & Transparency</h4>
+                <a href="#">Donation Transparency</a>
+                <a href="#">Escrow Explained</a>
+                <a href="#">Sponsor Disclosure</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Safety Center</a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            © 2025 ThumbsApp · Competition Social · Terms · Privacy · Cookies · Accessibility · Language
+        </div>
+    </footer>
+
+    <!-- Floating Action Button (mobile) -->
+    <div class="floating-action-btn" id="fab">+</div>
+
+    <!-- Scripts -->
+    <script src="js/core/app.js" type="module"></script>
+    <script src="js/core/bootloader.js" type="module"></script>
+    <script src="js/core/router.js" type="module"></script>
+    <script src="js/core/state-manager.js" type="module"></script>
+    <script src="js/core/event-bus.js" type="module"></script>
+    <script src="js/core/websocket-client.js" type="module"></script>
+    <script src="js/core/auth.js" type="module"></script>
+    <script src="js/core/rate-limit.js" type="module"></script>
+    <script src="js/core/permissions.js" type="module"></script>
+    <script src="js/core/theme-engine.js" type="module"></script>
+    <script src="js/core/ranking-engine.js" type="module"></script>
+    <script src="js/core/infinite-scroll.js" type="module"></script>
+    <script src="js/core/notification-engine.js" type="module"></script>
+    <script src="js/core/moderation-engine.js" type="module"></script>
+    <script src="js/core/pwa.js" type="module"></script>
+    <script src="js/feeds/home-feed.js" type="module"></script>
+    <script src="js/feeds/feed-renderer.js" type="module"></script>
+    <script src="js/feeds/feed-filters.js" type="module"></script>
+    <script src="js/feeds/feed-realtime.js" type="module"></script>
+    <script src="js/feeds/feed-memory.js" type="module"></script>
+    <script src="js/challenge/challenge-create.js" type="module"></script>
+    <script src="js/challenge/challenge-accept.js" type="module"></script>
+    <script src="js/challenge/challenge-gift.js" type="module"></script>
+    <script src="js/challenge/challenge-timer.js" type="module"></script>
+    <script src="js/challenge/skill-level-engine.js" type="module"></script>
+    <script src="js/challenge/equal-bet-validator.js" type="module"></script>
+    <script src="js/challenge/unlock-engine.js" type="module"></script>
+    <script src="js/challenge/challenge-status.js" type="module"></script>
+    <script src="js/live/live-engine.js" type="module"></script>
+    <script src="js/live/live-score-sync.js" type="module"></script>
+    <script src="js/live/spectator-engine.js" type="module"></script>
+    <script src="js/live/donation-engine.js" type="module"></script>
+    <script src="js/live/sponsor-engine.js" type="module"></script>
+    <script src="js/live/reaction-engine.js" type="module"></script>
+    <script src="js/live/ad-rotation-engine.js" type="module"></script>
+    <script src="js/live/moderator-controls.js" type="module"></script>
+    <script src="js/live/dispute-engine.js" type="module"></script>
+    <script src="js/economy/wallet-engine.js" type="module"></script>
+    <script src="js/economy/transaction-engine.js" type="module"></script>
+    <script src="js/economy/escrow-engine.js" type="module"></script>
+    <script src="js/economy/escrow-lock.js" type="module"></script>
+    <script src="js/economy/payout-engine.js" type="module"></script>
+    <script src="js/economy/platform-fee-engine.js" type="module"></script>
+    <script src="js/economy/donation-fee-engine.js" type="module"></script>
+    <script src="js/economy/sponsor-fee-engine.js" type="module"></script>
+    <script src="js/ads/ad-loader.js" type="module"></script>
+    <script src="js/ads/ad-impression-tracker.js" type="module"></script>
+    <script src="js/ads/ad-click-tracker.js" type="module"></script>
+    <script src="js/ads/ad-placement-engine.js" type="module"></script>
+    <script src="js/ai/wiki-engine.js" type="module"></script>
+    <script src="js/ai/research-assistant.js" type="module"></script>
+    <script src="js/components/header.js" type="module"></script>
+    <script src="js/components/footer.js" type="module"></script>
+    <script src="js/components/sidebar-left.js" type="module"></script>
+    <script src="js/components/sidebar-right.js" type="module"></script>
+    <script src="js/components/floating-action.js" type="module"></script>
+    <script src="js/components/post-menu.js" type="module"></script>
+    <script src="js/components/profile-menu.js" type="module"></script>
+    <script src="js/components/more-menu.js" type="module"></script>
+    <script src="js/components/modal-manager.js" type="module"></script>
+    <script src="js/utils/constants.js" type="module"></script>
+    <script src="js/utils/validators.js" type="module"></script>
+    <script src="js/utils/formatters.js" type="module"></script>
+    <script src="js/utils/animations.js" type="module"></script>
+    <script src="js/utils/id-generator.js" type="module"></script>
+    <script src="js/utils/helpers.js" type="module"></script>
+</body>
+</html>

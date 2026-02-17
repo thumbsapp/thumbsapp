@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbsApp - Trending</title>
+    <link rel="stylesheet" href="css/core/base.css">
+    <link rel="stylesheet" href="css/live/live-player.css">
+    <!-- ... other CSS includes ... -->
+    <link rel="stylesheet" href="css/feeds/feed-trending.css">
+</head>
+<body>
+    <header class="app-header">...</header>
+    <div class="main-container">
+        <aside class="sidebar-left">...</aside>
+        <main class="center-feed" id="trendingFeed">
+            <div class="sticky-filter-bar">
+                <span class="filter active">Live Now</span>
+                <span class="filter">High Stakes</span>
+                <span class="filter">Most Watched</span>
+                <span class="filter">Ending Soon</span>
+                <span class="filter">Sponsored</span>
+            </div>
+            <button class="refresh-btn">↻</button>
+            <div class="feed-stream" id="feedStream"></div>
+        </main>
+        <aside class="sidebar-right">...</aside>
+    </div>
+    <footer>...</footer>
+    <div class="floating-action-btn">+</div>
+    <script src="js/core/app.js" type="module"></script>
+    <script src="js/feeds/trending-feed.js" type="module"></script>
+</body>
+</html>
