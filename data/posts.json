@@ -1,0 +1,8 @@
+[
+    {
+        "id": "post1",
+        "userId": "user1",
+        "content": "Hello world",
+        "likes": 5
+    }
+]

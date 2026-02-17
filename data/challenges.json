@@ -1,0 +1,9 @@
+[
+    {
+        "id": "ch1",
+        "game": "chess",
+        "bet": 10,
+        "creator": "user1",
+        "status": "waiting"
+    }
+]

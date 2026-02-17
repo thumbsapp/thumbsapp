@@ -1,0 +1,10 @@
+[
+    {
+        "id": "user1",
+        "username": "alice",
+        "email": "alice@example.com",
+        "password": "password",
+        "reputation": 100,
+        "avatar": "assets/avatars/1.png"
+    }
+]
