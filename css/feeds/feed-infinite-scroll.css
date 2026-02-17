@@ -1,0 +1,8 @@
+.infinite-scroll-trigger {
+    height: 20px;
+    margin: var(--spacing-md) 0;
+}
+.loading-spinner {
+    text-align: center;
+    padding: var(--spacing-md);
+}

@@ -1,0 +1,33 @@
+.challenge-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--accent);
+}
+.challenge-ribbon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+}
+.difficulty {
+    background-color: var(--accent);
+    color: var(--navy);
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+}
+.players {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: var(--spacing-md) 0;
+}
+.vs {
+    font-weight: bold;
+    color: var(--accent);
+}
+.cta-section {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}

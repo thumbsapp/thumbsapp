@@ -1,0 +1,8 @@
+.wallet-page {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.balance {
+    font-size: 2rem;
+    margin: var(--spacing-lg) 0;
+}

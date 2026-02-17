@@ -1,0 +1,5 @@
+.mod-panel {
+    background-color: var(--bg-secondary);
+    border: 2px solid red;
+    padding: var(--spacing-md);
+}

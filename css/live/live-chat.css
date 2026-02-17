@@ -1,0 +1,17 @@
+.live-chat-area {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-md);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+}
+.chat-input {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}

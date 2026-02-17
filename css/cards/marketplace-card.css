@@ -1,0 +1,5 @@
+.marketplace-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-md);
+}

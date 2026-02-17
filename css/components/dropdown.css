@@ -1,0 +1,16 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--card-bg);
+    min-width: 160px;
+    box-shadow: var(--shadow-md);
+    z-index: 1;
+    border-radius: var(--border-radius-dropdown);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}

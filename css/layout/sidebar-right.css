@@ -1,0 +1,16 @@
+.sidebar-right {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-md);
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+}
+.sidebar-right > div {
+    margin-bottom: var(--spacing-lg);
+}
+.wiki-ai-box {
+    background-color: var(--card-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-card);
+}

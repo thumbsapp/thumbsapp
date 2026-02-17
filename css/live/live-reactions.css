@@ -1,0 +1,9 @@
+.reaction-burst {
+    position: absolute;
+    font-size: 2rem;
+    animation: burst 1s forwards;
+}
+@keyframes burst {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}

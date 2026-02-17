@@ -1,0 +1,36 @@
+.center-feed {
+    background-color: var(--bg-primary);
+}
+.sticky-filter-bar {
+    display: flex;
+    gap: var(--spacing-md);
+    overflow-x: auto;
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: 70px;
+    background-color: var(--bg-primary);
+    z-index: 90;
+}
+.filter {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 9999px;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    white-space: nowrap;
+    cursor: pointer;
+}
+.filter.active {
+    background-color: var(--accent);
+    color: var(--navy);
+}
+.refresh-btn {
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-sm);
+    background-color: var(--bg-secondary);
+    border-radius: 50%;
+}
+.feed-stream {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}

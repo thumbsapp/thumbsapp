@@ -1,0 +1,8 @@
+.ad-card {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-sm);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-align: center;
+}

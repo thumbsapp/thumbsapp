@@ -1,0 +1,44 @@
+.post-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+.card-header .avatar {
+    width: 40px;
+    height: 40px;
+}
+.card-header .user-info {
+    flex: 1;
+}
+.card-header .menu-dots {
+    cursor: pointer;
+}
+.card-content {
+    margin-bottom: var(--spacing-sm);
+}
+.card-actions {
+    display: flex;
+    gap: var(--spacing-md);
+}
+.card-actions button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+.card-actions button:hover {
+    color: var(--accent);
+}

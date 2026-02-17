@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .header-center {
+        display: none;
+    }
+    .header-right .btn-primary {
+        display: none;
+    }
+    .footer-top {
+        flex-wrap: wrap;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

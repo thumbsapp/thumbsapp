@@ -1,0 +1,14 @@
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--navy);
+}
+.btn-secondary {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}

@@ -1,0 +1,7 @@
+.live-ad {
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-secondary);
+    text-align: center;
+    line-height: 60px;
+}
